@@ -1,0 +1,233 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #444;
+    direction: rtl;
+    background-color: #f4f6f8;
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(to left, #6a89cc, #4a69bd);
+    direction: ltr;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #4a69bd;
+}
+
+/* المحتوى الرئيسي */
+main {
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.pen {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3867d6;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* معلومات الطلاب والملاحظات */
+.students-info, .about-section {
+    margin-bottom: 40px;
+}
+
+.notes p {
+    font-size: 18px;
+    margin: 30px 0;
+    color: #555;
+}
+
+/* الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #4a69bd;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* النموذج */
+.appForm {
+    background-color: #dff0ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* عناصر الإدخال */
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4a69bd;
+    box-shadow: 0 0 5px rgba(74, 105, 189, 0.4);
+    outline: none;
+}
+
+/* أزرار النموذج */
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #38ada9;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #3cba92;
+}
+
+button[type="reset"] {
+    background-color: #e55039;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #eb2f06;
+}
+
+/* رسائل الخطأ */
+.error-message {
+    color: #e55039;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* وسائط التطبيقات */
+.media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.media img {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto;
+}
+
+.media audio, .media video {
+    max-width: 100%;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 100%) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .media {
+        flex-direction: column;
+        align-items: center;
+    }
+}

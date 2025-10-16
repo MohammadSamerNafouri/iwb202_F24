@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nafouri Company</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+                <li><a href="add_app.html">إضافة تطبيق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+
+    <p class="pen">اختر التطبيق الذي تريده</p>
+
+    <div id="apps-container">
+      <table id="appsTable">
+        <thead>
+          <tr>
+            <th>اسم التطبيق</th>
+            <th>الشركة المطورة</th>
+            <th>مجال الاستخدام</th>
+            <th>مجاني /مدفوع</th>
+            <th>عرض التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody>
+            <td>whatsapp</td>
+            <td>meta</td>
+            <td>social media</td>
+            <td>مجاني</td>
+            <td><input type="radio" class="toggleDetails" data-id="whatsapp"></td>
+            </tr>
+            <tr>
+                <td>facebook</td>
+                <td>meta</td>
+                <td>social media</td>
+                <td>مجاني</td>
+                <td><input type="radio" class="toggleDetails" data-id="facebook"></td>
+            </tr>
+            <tr>
+                <td>instagram</td>
+                <td>meta</td>
+                <td>social media</td>
+                <td>مجاني</td>
+                <td><input type="radio" class="toggleDetails" data-id="instagram"></td>
+            </tr>
+            <tr>
+                <td>thread</td>
+                <td>meta</td>
+                <td>social media</td>
+                <td>مجاني</td>
+                <td><input type="radio" class="toggleDetails" data-id="thread"></td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>meta</td>
+                <td>social media</td>
+                <td>مجاني</td>
+                <td><input type="radio" class="toggleDetails" data-id="X"></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+</body>
+</html>
